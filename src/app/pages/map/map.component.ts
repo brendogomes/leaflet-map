@@ -67,7 +67,7 @@ export class MapComponent implements OnInit, AfterViewInit {
       this.marker = L.marker([
         this.receiveLatCurrent,
         this.receiveLonCurrent,
-      ]).addTo(this.map);
+      ]).addTo(this.map);       
       
       this.circle = L.circle([this.receiveLatCurrent, this.receiveLonCurrent], {
         color: 'steelblue',
@@ -75,7 +75,7 @@ export class MapComponent implements OnInit, AfterViewInit {
         fillColor: 'steelblue',
         opacity: 0.9, 
       }).addTo(this.map);
-    });
+    }); 
   }
 
   ngOnInit(): void {}
